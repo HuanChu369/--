@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ring"
+    android:id="@+id/layoutBellRing"
+    android:orientation="vertical" >
+<!-- 显示时间的文本框 -->
+    <TextView
+        android:id="@+id/tvShowTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="36sp" />
+<!-- 闹钟响铃之后的延迟响铃时间按钮 -->
+<!-- 我设置的文本内容是“5分钟后再响” -->
+    <Button
+        android:id="@+id/btnDelayRingTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="5分钟后再响" />
+<!-- 显示备注信息的文本框 -->
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+<!-- 关闭闹钟的按钮 -->
+        <Button
+            android:id="@+id/btnShutdown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:text="点击关闭闹钟"
+            android:textSize="16sp" />
+ </LinearLayout>
+
+</LinearLayout>
